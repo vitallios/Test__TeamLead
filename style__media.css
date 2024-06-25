@@ -109,12 +109,17 @@
 }
 
 @media (max-width: 520px) {
+ h3 {
+  font-size: 4vw;
+}
+.card {
+ padding: 2vw;
+}
+ 
  .mMenu_content-text {
   width: 100%;
   z-index: 10;
-
  }
-
  .mMenu_content-text>ul>li {
   width: 100%;
  }
@@ -129,9 +134,33 @@
   right: 0;
  }
 
+ .product__img>h4 {
+  position: absolute;
+  right: -55%;
+  top: -9%;
+  font-size: 4.5vw;
+ }
+ .product__img>h4>strike {
+  font-size: 3vw;
+ }
+ h1 {
+  font-size: 7vw;
+}
+
+ h2 {
+  font-size: 5vw;
+}
+
  .sostav__grid-card>img {
-  width: 80%;
+  width: 35%;
   padding: 2%;
+ }
+ .grid__center>.sostav__grid-card>img {
+  width: 50%;
+  margin: 5vw 0;
+}
+ .product__text>ul{
+  margin: 4vw 0 3vw;
  }
 
  .carousel {
@@ -143,11 +172,11 @@
  }
 
  .product__text>p {
-  font-size: 2.5vw;
+  font-size: 3.5vw;
  }
 
  .product__text>ul>li {
-  font-size: 2.7vw;
+  font-size: 3.2vw;
  }
 
  .product__content {
@@ -158,5 +187,8 @@
  .product__btn {
   padding: 3vw;
   font-size: 3.5vw;
+ }
+ .product__text>h3{
+
  }
 }
