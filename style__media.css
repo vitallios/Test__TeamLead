@@ -1,0 +1,162 @@
+@media (max-width: 1640px) {
+ #videoWrapper {
+  height: 50vw;
+ }
+
+ p,
+ .sostav__grid-card>p,
+ ul>li,
+ a {
+  font-size: 1.4vw;
+ }
+
+ .mMenu_content-text {
+  width: 70%;
+ }
+
+ .mMenu_content {
+  justify-content: space-around;
+ }
+
+ .mHeader__menu>ul>li>a {
+  font-size: 1.4vw;
+ }
+
+ .product__img>img {
+  width: 20vw;
+  height: 30vw;
+ }
+
+ .form__header>.container {
+  justify-content: space-around
+ }
+}
+
+@media (max-width: 940px) {
+ h3 {
+  font-size: 3.5vw;
+ }
+
+ p,
+ .sostav__grid-card>p,
+ ul>li,
+ a {
+  font-size: 1.8vw;
+ }
+
+ .sostav__grid {
+  display: flex;
+  flex-direction: column;
+ }
+
+ .sostav__grid-list {
+  flex-direction: row;
+ }
+
+ .carousel {
+  height: 35vw;
+ }
+
+ .form__forms {
+  padding: 2vw;
+  width: 70%;
+ }
+
+ .form__forms-input {
+  font-size: 2vw;
+  padding: 2vw;
+ }
+
+ .card {
+  padding: 5vw;
+ }
+
+ .card__avatar>img {
+  width: 15vw;
+  height: 15vw;
+ }
+
+ .mMenu_content-text>ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5vw;
+  margin: 2vw 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch
+ }
+
+ .mMenu_content-text>ul>li {
+  width: 100%;
+ }
+
+ .mMenu_content-text>ul>li:last-child {
+  width: 100%;
+ }
+
+ .sostav__grid-card>img {
+  width: 50%;
+  padding: 20px;
+ }
+
+ .sostav__grid-card {
+  padding: 2%;
+ }
+
+ .grid__center>.sostav__grid-card>img {
+  width: 60%;
+ }
+}
+
+@media (max-width: 520px) {
+ .mMenu_content-text {
+  width: 100%;
+  z-index: 10;
+
+ }
+
+ .mMenu_content-text>ul>li {
+  width: 100%;
+ }
+
+ .mMenu_content {
+  position: relative;
+ }
+
+ .mMenu_content-img {
+  position: absolute;
+  filter: brightness(0.7);
+  right: 0;
+ }
+
+ .sostav__grid-card>img {
+  width: 80%;
+  padding: 2%;
+ }
+
+ .carousel {
+  height: 45vw;
+ }
+
+ .card__text>p {
+  font-size: 3vw;
+ }
+
+ .product__text>p {
+  font-size: 2.5vw;
+ }
+
+ .product__text>ul>li {
+  font-size: 2.7vw;
+ }
+
+ .product__content {
+  display: flex;
+  flex-direction: column-reverse;
+ }
+
+ .product__btn {
+  padding: 3vw;
+  font-size: 3.5vw;
+ }
+}
