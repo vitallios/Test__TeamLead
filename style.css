@@ -92,16 +92,20 @@ header {
  padding: 2vw 0 1vw 0;
 }
 
+.mHeader__mobail-icons{
+	display: none;
+}
+
 .mHeader__logo {
  font-size: 2vw;
 }
 
-.mHeader__menu>ul {
+.mHeader__menu-list {
  display: flex;
  gap: 1vw;
 }
 
-.mHeader__menu>ul>li>a:hover {
+.mHeader__menu-list>li>a:hover {
  color: var(--text-akcent);
  transition: all 0.7s;
  -webkit-transition: all 0.7s;

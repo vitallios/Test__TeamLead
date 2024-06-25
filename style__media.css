@@ -18,7 +18,7 @@
   justify-content: space-around;
  }
 
- .mHeader__menu>ul>li>a {
+ .mHeader__menu-list>li>a {
   font-size: 1.4vw;
  }
 
@@ -43,6 +43,12 @@
  a {
   font-size: 1.8vw;
  }
+ .mHeader__menu-list>li>a{
+  font-size: 2vw;
+ }
+ .mHeader__logo {
+  font-size: 3vw;
+}
 
  .sostav__grid {
   display: flex;
@@ -116,13 +122,71 @@ p{
  font-size: 3vw;
 }
 
+.mHeader__menu-list{
+  display: none;
+ }
+
+
+ .mHeader__menu-list>li>a {
+  font-size: 6vw;
+  margin: 2vw 0;
+}
+.mHeader__mobail-icons{
+	display: flex;
+  position: relative;
+}
+button{
+ background: none;
+ border: none;
+ cursor: pointer;
+}
+
+.burger {
+  position: absolute;
+  top: -4vw;
+  right: 0vw;
+  opacity: 0;
+  z-index: -1;
+}
+.clous{
+  position: absolute;
+  top: -4vw;
+  right: 0vw;
+  opacity: 0;
+  z-index: -1;
+}
+
+.menuActiv{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #020202;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.active{
+  z-index: 1000;
+  opacity: 1;
+  transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  -o-transition: all 0.7s;
+}
+
+
+
  .mHeader__logo {
   font-size: 6vw;
   padding: 4vw;
 }
-.mHeader__menu>ul{
- display: none;
-}
+
  
  h3 {
   font-size: 4vw;

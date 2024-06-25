@@ -2,6 +2,35 @@ const nextBtn = document.querySelector(".next");
 const prevBtn = document.querySelector(".prev");
 const track = document.querySelector(".track");
 
+const btnMenu = document.querySelector(".burger");
+const btnClous = document.querySelector(".clous");
+const menuActiv = document.querySelector(".menuActiv");
+const menuLink = document.querySelectorAll('.mHeader__menu-list>li>a')
+
+
+btnMenu.addEventListener("click", ()  =>  {
+  btnMenu.classList.toggle("active");
+  btnClous.classList.toggle("active");
+  document.querySelector('.mHeader__menu-list').classList.toggle("menuActiv");
+})
+btnClous.addEventListener("click", ()  =>  {
+  btnMenu.classList.toggle("active");
+  btnClous.classList.toggle("active");
+  document.querySelector('.mHeader__menu-list').classList.toggle("menuActiv");
+})
+menuLink.forEach(link => {
+  link.addEventListener("click", ()  =>  {
+    btnMenu.classList.add("active");
+    btnClous.classList.remove("active");
+    document.querySelector('.mHeader__menu-list').classList.remove("menuActiv");
+  })
+})
+
+
+
+
+
+
 // You can also calculate this dynamically by calling querySelectorAll(".slide")
 // and then using the length property.
 const NUM_SLIDES = 3;
@@ -31,13 +60,9 @@ function getTimeRemaining(endtime) {
   const total = Date.parse(endtime) - Date.parse(new Date());
   const seconds = Math.floor((total / 1000) % 60);
   const minutes = Math.floor((total / 1000 / 60) % 60);
-  // const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
-  // const days = Math.floor(total / (1000 * 60 * 60 * 24));
   
   return {
     total,
-    // days,
-    // hours,
     minutes,
     seconds
   };
@@ -47,13 +72,9 @@ function getTimeRemaining(endtime) {
   const total = Date.parse(endtime) - Date.parse(new Date());
   const seconds = Math.floor((total / 1000) % 60);
   const minutes = Math.floor((total / 1000 / 60) % 30);
-  // const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
-  // const days = Math.floor(total / (1000 * 60 * 60 * 24));
   
   return {
     total,
-    // days,
-    // hours,
     minutes,
     seconds
   };
@@ -61,16 +82,11 @@ function getTimeRemaining(endtime) {
 
 function initializeClock(id, endtime) {
   const clock = document.getElementById(id);
-  // const daysSpan = clock.querySelector('.days');
-  // const hoursSpan = clock.querySelector('.hours');
   const minutesSpan = clock.querySelector('.minutes');
   const secondsSpan = clock.querySelector('.seconds');
 
   function updateClock() {
     const t = getTimeRemaining(endtime);
-
-    // daysSpan.innerHTML = t.days;
-    // hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
     minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
     secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
