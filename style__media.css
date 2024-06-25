@@ -109,6 +109,21 @@
 }
 
 @media (max-width: 520px) {
+ #videoWrapper {
+  height: 80vw;
+}
+p{
+ font-size: 3vw;
+}
+
+ .mHeader__logo {
+  font-size: 6vw;
+  padding: 4vw;
+}
+.mHeader__menu>ul{
+ display: none;
+}
+ 
  h3 {
   font-size: 4vw;
 }
@@ -162,6 +177,9 @@
  .product__text>ul{
   margin: 4vw 0 3vw;
  }
+ .sostav__grid-card>p{
+  font-size: 2vw;
+ }
 
  .carousel {
   height: 45vw;
@@ -188,7 +206,11 @@
   padding: 3vw;
   font-size: 3.5vw;
  }
- .product__text>h3{
-
- }
+ .form__forms-input {
+  font-size: 3vw;
+  padding: 4vw;
+}
+.mFooter>h4{
+ font-size: 2.5vw;
+}
 }
